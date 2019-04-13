@@ -1,44 +1,22 @@
-\documentclass[twocolumn, aps, rmp, amsmath, amssymb, nofootinbib, superscriptaddress, longbibliography, floatfix, table-of-contents, eqsecnum]{revtex4-2}
+\documentclass[aps,rmp,twocolumn,amsmath,amssymb,nofootinbib,superscriptaddress]{revtex4}
 
+\newcommand{\bra}[1]{\langle#1|}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\op}[2]{\hat{\textbf{#1}}_{#2}}
+\newcommand{\dagop}[2]{\hat{\textbf{#1}}_{#2}^\dag}
 \usepackage[pdftex]{graphicx}
-\usepackage[usenames, dvipsnames, svgnames, table]{xcolor}
 \usepackage{mathrsfs}
-\usepackage[colorlinks, breaklinks]{hyperref}
-\usepackage{url}
-\usepackage{makeidx}
-\usepackage{nomencl}
-\usepackage{colortbl}
-\usepackage[section]{placeins}
-\usepackage{qcircuit}
-\usepackage{array}
-\usepackage{amsmath}
-\usepackage[noend]{algpseudocode}
-\usepackage{mdframed}
-\usepackage{type1cm}
-\usepackage{lettrine}
-\usepackage{afterpage}
-\usepackage[english]{babel}
-\usepackage{lmodern}
-\usepackage{multirow}
-\usepackage[margin=0pt, font=small, labelfont=bf, labelsep=endash, justification=centerlast, labelsep=colon]{caption}
-\usepackage{microtype}
-\usepackage{booktabs}
-\usepackage{fancyhdr}
-\usepackage{braket}
-
-\hypersetup{
-	pdfauthor = {Peter P. Rohde},
-	pdftitle = {Competitive information dynamics - The theory of competitive traits & meta-strategic game-theory},
-	pdfsubject = {Competitive information dynamics}
-}
+\usepackage[colorlinks]{hyperref}
 
 \begin{document}
+
+\bibliographystyle{apsrev}
 
 %
 % Title
 %
 
-\title{Competitive information dynamics --- The theory of competitive traits \& meta-strategic game-theory}
+\title{Competitive information dynamics \& the theory of competitive traits}
 
 %
 % Authors
@@ -90,10 +68,6 @@ for distinct strategies for different traits, where the traits are highly correl
 trait absirbtion by strategies advancing correlated traits. 
 
 neutral strategies for non-competing traits. eg if a trait is random, with no capacity to influence its own future propagation, we expect a neutral strategy to be observed. i.e the trait is non-competitive.
-
-section: medium for information. incl. collective.
-
-tit for tat is meta-strategically stable, even though no stability for groups employing it.
 
 \section{Definitions}
 
@@ -259,7 +233,7 @@ a group employing a strategy may suffer negative payoff upon another group adopt
 \subsection{Meta-utility}
 
 \begin{align}
-\mathcal{P}_{\mathcal{S}_i} = \sum_{g\in U} \mathcal{P}_g(\mathcal{S}_i).
+\mathcal{P}_\mathcal{S} = \sum_{i\in U} \mathcal{P}_i(\mathcal{S}).
 \end{align}
 
 when a strategy is employed by just a single player, the meta-utility of the strategy equates to the utility to the player.
@@ -270,19 +244,9 @@ in general, for positive-sum games with players employing the same strategy, the
 
 \subsection{Meta-strategic game-theory}
 
-\begin{align}
-\mathcal{P}_{\mathcal{S}_1} > \mathcal{P}_{\mathcal{S}_2}	
-\end{align}
-even when
-\begin{align}
-\mathcal{P}_1(\mathcal{S}_1) < \mathcal{P}_1(\mathcal{S}_2)
-\end{align}
-
 show game payoff matrix. show meta-strategy payoff matrix.
 
 Find examples of contradictions between the two.
-
-A strategy can exhibit meta-strategic stability in the absence of any stability amongst those employing it.
 
 \section{Quantum information -- A new era for strategic dominance}
 
@@ -292,26 +256,6 @@ Future quantum strategies. Transition in computational complexity of strategies.
 
 Philosophical: for humanity, our group strategies are successful at promoting the strategy. Unsuccessful at promoting the groups. We must realign our strategies to become congruent with the trait group `humanity'. Enhance human interests, rather than the strategy. This may require making our old strategies extinct, and artificially replacing them with a new meta-group strategy. We can do this using our capacity for intelligence, computation, reason, and morality.
 
-must optimise our strategies, rather than risk being exploited and bled dry by the prevailing meta-strategy, which has until now dictated them.
-
-Must optimise the utility to ourselves\footnote{Militant vegans may instead advocate optimising $\mathcal{P}_{G_\text{pandas}}(\mathcal{S}_\text{mankind})$.},
-\begin{align}
-	\mathcal{P}_{G_\text{mankind}}(\mathcal{S}_\text{mankind}),
-\end{align}
-rather than capitulate to optimising,
-\begin{align}
-	\mathcal{P}_{\mathcal{S}_\text{mankind}}(\mathcal{S}_\text{mankind}),
-\end{align}
-knowing well that $\mathcal{S}_\text{mankind}$ overlaps enormously with the strategies employed by many other species, in which case our extinction may be inconsequential or to the benefit of the prevailing meta-strategy.
-
 Identity politics.
-
-\subsection{Humanism -- Religion \& universal human morals}
-
-e.g tit for tat acroass species
-
-rir for tat as foundrion for human religion and morals.
-
-\bibliography{bibliography}
 
 \end{document}
