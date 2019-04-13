@@ -5,15 +5,12 @@
 \usepackage{mathrsfs}
 \usepackage[colorlinks, breaklinks]{hyperref}
 \usepackage{url}
-\usepackage{makeidx}
-\usepackage{nomencl}
-\usepackage{colortbl}
+%\usepackage{colortbl}
 \usepackage[section]{placeins}
-\usepackage{qcircuit}
-\usepackage{array}
+%\usepackage{array}
 \usepackage{amsmath}
-\usepackage[noend]{algpseudocode}
-\usepackage{mdframed}
+%\usepackage[noend]{algpseudocode}
+%\usepackage{mdframed}
 \usepackage{type1cm}
 \usepackage{lettrine}
 \usepackage{afterpage}
@@ -24,13 +21,15 @@
 \usepackage{microtype}
 \usepackage{booktabs}
 \usepackage{fancyhdr}
-\usepackage{braket}
+%\usepackage{braket}
 
 \hypersetup{
 	pdfauthor = {Peter P. Rohde},
-	pdftitle = {Competitive information dynamics - The theory of competitive traits & meta-strategic game-theory},
+	pdftitle = {Competitive information dynamics - The theory of competitive traits & meta-strategic game theory},
 	pdfsubject = {Competitive information dynamics}
 }
+
+\newcommand{\famousquote}[2]{{\textit{``#1''} --- #2.}\newline}
 
 \begin{document}
 
@@ -38,7 +37,7 @@
 % Title
 %
 
-\title{Competitive information dynamics --- The theory of competitive traits \& meta-strategic game-theory}
+\title{Competitive information dynamics --- The theory of competitive traits \& meta-strategic game theory}
 
 %
 % Authors
@@ -95,15 +94,19 @@ section: medium for information. incl. collective.
 
 tit for tat is meta-strategically stable, even though no stability for groups employing it.
 
-\section{Definitions}
+%
+% Mathematical background
+%
 
-\subsection{Traits}
+\part{Mathematical background}
+
+\section{Traits}
 
 A \textit{trait} is an entirely arbitrary characteristic that may be associated with an individual. It may be genotypic, phenotypic, memetic, cultural, hereditary or non-hereditary, acquired or inate, physical or psychological -- it may be defined arbitrarily and abstractly as any feature by which individuals within a group can be identified as having in common.
 
 We use $t$ to denote a single trait, or $\vec t=\{t_1,\dots,t_n\}$ to denote a set of traits.
 
-\subsubsection{Correlated traits}
+\subsection{Correlated traits}
 
 (replace with covariance)
 \begin{align}
@@ -120,11 +123,11 @@ if
 P(t_1\in g | t_2\in g)\approx 1.	
 \end{align}
 
-\subsubsection{Competing vs non-competing traits}
+\subsection{Competing vs non-competing traits}
 
 Selective pressures. Take two perfectly correlated traits. One may act competitively, the other not. The later inherits all benefits of the former, without actively pursuing a coordinated strategy of its own.
 
-\subsection{Individuals \& groups}
+\section{Individuals \& groups}
 
 We use $U$ to denote the \textit{universe} -- the set of all individuals participating in the model under consideration. An \textit{individual} is a single participant within the universe, characterised entirely by the complete set of traits it exhibits,
 \begin{align}
@@ -154,7 +157,7 @@ G_t \cap \bar G_t &= \emptyset \,\,\text{(exclusive)},
 \end{align}
 since traits are binary.
 
-\subsection{Strategies}
+\section{Strategies}
 
 A \textit{strategy} is defined in a game-theoretic context as the algorithm employed by one player when interacting with another. A player may be an individual or a group of individuals. Thus, strategies may be defined at an individual level (\textit{individual strategies}), or collectively at a group level (\textit{group strategies}),
 \begin{align}
@@ -178,32 +181,11 @@ Individuals within a group may not behave homogenously. Thus, the strategy emplo
 	\mathcal{S}(g\in G|q)\neq \mathcal{S}(G|q).
 \end{align}
 
-\subsubsection{Strategies as information}
+\subsection{Strategies as information}
 
 $I(\mathcal{S})$
 
-\subsubsection{Indirect strategies}
-
-A trait might directly pursue its own competitive strategy, or indirectly inherit it via correlated traits doing so. For example, a genetically induced trait might be highly competitive, but the responsible genes additionally give rise to other secondary traits that are not inherently competitive in their own right. In this instance, the secondary correlated traits indirectly inherit competitiveness from the more competitive primary trait.
-
-\subsubsection{Associative traits}
-
-\subsubsection{Adoptive traits}
-
-preprioritising strategies to promote another trait that has higher success.
-
-\subsubsection{Trait substitution}
-
-\subsubsection{Strategic subservience}
-
-self-competition for strategically comaptible goals:
-for distinct strategies for different traits, where the traits are highly correlated or subset, better strategy is for the weaker trait to piggyback off the stronger common trait than to ouruse its own. strong supergroup strategy leads to weaker subgroup strategy to yield pririty to the supergroup strategy.
-
-\begin{align}
-\mathcal{P}_{t_1}(\mathcal{S}_{t_2}) > \mathcal{P}_{t_1}(\mathcal{S}_{t_1}), \,\,t_1\subset t_2.
-\end{align}
-
-\subsection{Payoff}
+\section{Payoffs}
 
 The \textit{payoff} of a strategy for player $p$, $\mathcal{P}_p(\mathcal{S})$, is the expectation of `reward' (in arbitrary units of utility) obtained by executing a strategy. The payoff may be positive (for `successful' strategies advancing the player's interests), or negative (for `unsuccessful' ones).
 
@@ -214,7 +196,7 @@ A special case arises when players compete for finite resources, in which case t
 	\mathcal{P}_p(\mathcal{S}_p) + \mathcal{P}_q(\mathcal{S}_q) \leq c.
 \end{align}
 
-Another specialised case is \textit{zero-sum games} in which players' payoffs are exactly opposite, i.e gains made by one come at the direct expense of the other,
+Another specialised case is \textit{zero-sum games} ($c=0$) in which players' payoffs are exactly opposite, i.e gains made by one come at the direct expense of the other,
 \begin{align}
 \mathcal{P}_p(\mathcal{S}_p) = -\mathcal{P}_q(\mathcal{S}_q).
 \end{align}
@@ -225,9 +207,9 @@ Alternately, opposing strategies may collectively act in one another's mutual be
 \end{align}
 Here the two distinct players effectively engage in a cooperative inter-group strategy.
 
-\subsubsection{Individual payoff}
+\subsection{Individual payoff}
 
-\subsubsection{Group payoff}
+\subsection{Group payoff}
 
 The payoff for a group is simply given by the sum of the payoffs benefitting the group by all individuals in the universe,
 \begin{align}
@@ -240,11 +222,55 @@ In the case of a non-competing trait that achieves payoff indirectly via its cor
 \end{align}
 That is, the group $G_1$ benefits passively (implementing no strategy of its own) via the payoff bestowed upon group $G_2$ pursuing its own strategy.
 
+%
+% The theory of competitive traits
+%
+
+\part{The theory of competitive traits}
+
+\section{Indirect strategies}
+
+A trait might directly pursue its own competitive strategy, or indirectly inherit it via correlated traits doing so. For example, a genetically induced trait might be highly competitive, but the responsible genes additionally give rise to other secondary traits that are not inherently competitive in their own right. In this instance, the secondary correlated traits indirectly inherit competitiveness from the more competitive primary trait.
+
+\section{Associative traits}
+
+\section{Adoptive traits}
+
+preprioritising strategies to promote another trait that has higher success.
+
+\section{Trait substitution}
+
+\section{Strategic subservience}
+
+\famousquote{Madam Speaker, I yield to the honourable gentleman.}{The Senator}
+
+self-competition for strategically comaptible goals:
+for distinct strategies for different traits, where the traits are highly correlated or subset, better strategy is for the weaker trait to piggyback off the stronger common trait than to ouruse its own. strong supergroup strategy leads to weaker subgroup strategy to yield pririty to the supergroup strategy.
+
+\begin{align}
+\mathcal{P}_{t_1}(\mathcal{S}_{t_2}) > \mathcal{P}_{t_1}(\mathcal{S}_{t_1}), \,\,t_1\subset t_2.
+\end{align}
+
 \section{Selfish vs altruistic behaviour}
 
 Conditions where pursuing self-interest is congruent with group interest.
 
-\section{Meta-strategy}
+Altruism,
+\begin{align}
+\mathcal{P}_G(\mathcal{S}_g) > \mathcal{P}_g(\mathcal{S}_g),
+\end{align}
+where
+\begin{align}
+	g \subset G.
+\end{align}
+
+%
+% Meta-strategy
+%
+
+\part{Meta-strategy}
+
+\section{Meta-strategic game theory}
 
 Strategic traits: the trait of employing a strategy, $t=\mathcal{S}$. Payoff for strategic trait group is net survival of strategy itself, not a particular group employing the strategy. Strategy is aiming to advance itself, using groups employing it as hosts for itself. May not care about a specific group, and willing to sacrifice them so long as the strategy is preserved long-term. In the case of zero-sum games, might act indifferently.
 
@@ -256,11 +282,12 @@ Describe new game-theoretic model where utility for strategy is utility of all w
 
 a group employing a strategy may suffer negative payoff upon another group adopting the same strategy. however the meta-utility of the strategy is positive in this case.
 
-\subsection{Meta-utility}
+\section{Meta-utility}
 
 \begin{align}
-\mathcal{P}_{\mathcal{S}_i} = \sum_{g\in U} \mathcal{P}_g(\mathcal{S}_i).
+\mathcal{P}_{\mathcal{S}_i} = \sum_{t} \mathcal{P}_{G_t}(\mathcal{S}_i)\, |\, \mathcal{S}_{G_t} = \mathcal{S}_i.
 \end{align}
+For all groups employing $\mathcal{S}_i$. Assuming the existence of multiple, distinct (not perfectly correlated) trait groups, this necessarily implies double-counting of individuals. However, this poses no conceptual problem, since these multiple counts by design reflect the reproductive strength of the strategy, not the individuals it represents, on the basis that individuals employing the same strategy on multiple fronts similarly have multiple independent avenues by which to propagate it.
 
 when a strategy is employed by just a single player, the meta-utility of the strategy equates to the utility to the player.
 
@@ -268,7 +295,7 @@ when a strategy is employed by two competing groups engaging in a zero-sum game,
 
 in general, for positive-sum games with players employing the same strategy, the meta-utility to the strategy is positive, independent of outcomes of individual players.
 
-\subsection{Meta-strategic game-theory}
+\section{Meta-strategic game theory}
 
 \begin{align}
 \mathcal{P}_{\mathcal{S}_1} > \mathcal{P}_{\mathcal{S}_2}	
@@ -284,17 +311,37 @@ Find examples of contradictions between the two.
 
 A strategy can exhibit meta-strategic stability in the absence of any stability amongst those employing it.
 
-\section{Quantum information -- A new era for strategic dominance}
+%
+% Quantum information - A new era for strategic dominance
+%
+
+\part{Quantum information -- A new era for strategic dominance}
 
 Future quantum strategies. Transition in computational complexity of strategies.
 
-\section{Humanity}
+Finding optimal strategies is \textbf{EXP}-complete in general. We can only implement \textbf{BPP}. But in future can implement \textbf{BQP}. Also quadratically enhance \textbf{NP}-complete. In relativistic setting possibly extend to \textbf{postBQP}, \textbf{\#P}.
+
+%
+% Humanism
+%
+
+\part{Humanism}
+
+\section{The origins of universal human values}
+
+e.g tit for tat acroass species
+
+rir for tat as foundrion for human religion and morals.
+
+\section{Tribalism -- Ideology, religion \& the era of identity politics}
+
+\section{The contradictions \& viability of mankind in the face of human intelligence}
 
 Philosophical: for humanity, our group strategies are successful at promoting the strategy. Unsuccessful at promoting the groups. We must realign our strategies to become congruent with the trait group `humanity'. Enhance human interests, rather than the strategy. This may require making our old strategies extinct, and artificially replacing them with a new meta-group strategy. We can do this using our capacity for intelligence, computation, reason, and morality.
 
 must optimise our strategies, rather than risk being exploited and bled dry by the prevailing meta-strategy, which has until now dictated them.
 
-Must optimise the utility to ourselves\footnote{Militant vegans may instead advocate optimising $\mathcal{P}_{G_\text{pandas}}(\mathcal{S}_\text{mankind})$.},
+Must optimise the utility to ourselves\footnote{Militant vegans may instead advocate optimising $\mathcal{P}_{G_\text{pandas}}(\mathcal{S}_\text{mankind})$, whereas Jains may opt for optimising $\mathcal{P}_{G_\text{beings}}(\mathcal{S}_\text{mankind})$.},
 \begin{align}
 	\mathcal{P}_{G_\text{mankind}}(\mathcal{S}_\text{mankind}),
 \end{align}
@@ -304,13 +351,10 @@ rather than capitulate to optimising,
 \end{align}
 knowing well that $\mathcal{S}_\text{mankind}$ overlaps enormously with the strategies employed by many other species, in which case our extinction may be inconsequential or to the benefit of the prevailing meta-strategy.
 
-Identity politics.
-
-\subsection{Humanism -- Religion \& universal human morals}
-
-e.g tit for tat acroass species
-
-rir for tat as foundrion for human religion and morals.
+Want,
+\begin{align}
+\mathcal{P}_{G_\text{mankind}}(\mathcal{S}_{G_t}) \geq \mathcal{P}_{G_t}(\mathcal{S}_{G_t})\,\,\forall\, t
+\end{align}
 
 \bibliography{bibliography}
 

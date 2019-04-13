@@ -3,27 +3,29 @@
 \contentsline {section}{\numberline {}Contents}{1}{section*.2}% 
 \tocdepth@restore 
 \contentsline {section}{\numberline {I}Notes}{1}{section*.3}% 
-\contentsline {section}{\numberline {II}Definitions}{1}{section*.4}% 
-\contentsline {subsection}{\numberline {A}Traits}{1}{section*.5}% 
-\contentsline {subsubsection}{\numberline {1}Correlated traits}{2}{section*.6}% 
-\contentsline {subsubsection}{\numberline {2}Trait heirarchies}{2}{section*.7}% 
-\contentsline {subsubsection}{\numberline {3}Competing vs non-competing traits}{2}{section*.8}% 
-\contentsline {subsection}{\numberline {B}Individuals \& groups}{2}{section*.9}% 
-\contentsline {subsection}{\numberline {C}Strategies}{2}{section*.10}% 
-\contentsline {subsubsection}{\numberline {1}Strategies as information}{2}{section*.11}% 
-\contentsline {subsubsection}{\numberline {2}Indirect strategies}{2}{section*.12}% 
-\contentsline {subsubsection}{\numberline {3}Associative traits}{2}{section*.13}% 
-\contentsline {subsubsection}{\numberline {4}Adoptive traits}{2}{section*.14}% 
-\contentsline {subsubsection}{\numberline {5}Trait substitution}{2}{section*.15}% 
-\contentsline {subsubsection}{\numberline {6}Strategic subservience}{2}{section*.16}% 
-\contentsline {subsection}{\numberline {D}Payoff}{3}{section*.17}% 
-\contentsline {subsubsection}{\numberline {1}Individual payoff}{3}{section*.18}% 
-\contentsline {subsubsection}{\numberline {2}Group payoff}{3}{section*.19}% 
-\contentsline {section}{\numberline {III}Selfish vs altruistic behaviour}{3}{section*.20}% 
-\contentsline {section}{\numberline {IV}Meta-strategy}{3}{section*.21}% 
-\contentsline {subsection}{\numberline {A}Meta-utility}{3}{section*.22}% 
-\contentsline {subsection}{\numberline {B}Meta-strategic game-theory}{4}{section*.23}% 
-\contentsline {section}{\numberline {V}Quantum information -- A new era for strategic dominance}{4}{section*.24}% 
-\contentsline {section}{\numberline {VI}Humanity}{4}{section*.25}% 
-\contentsline {subsection}{\numberline {A}Humanism -- Religion \& universal human morals}{4}{section*.26}% 
-\contentsline {section}{\numberline {}References}{4}{section*.27}% 
+\contentsline {part}{I\hspace {1em}Mathematical background}{1}{part.1}% 
+\contentsline {section}{\numberline {II}Traits}{2}{section*.4}% 
+\contentsline {subsection}{\numberline {A}Correlated traits}{2}{section*.5}% 
+\contentsline {subsubsection}{\numberline {1}Trait heirarchies}{2}{section*.6}% 
+\contentsline {subsection}{\numberline {B}Competing vs non-competing traits}{2}{section*.7}% 
+\contentsline {section}{\numberline {III}Individuals \& groups}{2}{section*.8}% 
+\contentsline {section}{\numberline {IV}Strategies}{2}{section*.9}% 
+\contentsline {subsection}{\numberline {A}Strategies as information}{2}{section*.10}% 
+\contentsline {subsection}{\numberline {B}Indirect strategies}{2}{section*.11}% 
+\contentsline {subsection}{\numberline {C}Associative traits}{3}{section*.12}% 
+\contentsline {subsection}{\numberline {D}Adoptive traits}{3}{section*.13}% 
+\contentsline {subsection}{\numberline {E}Trait substitution}{3}{section*.14}% 
+\contentsline {subsection}{\numberline {F}Strategic subservience}{3}{section*.15}% 
+\contentsline {section}{\numberline {V}Payoffs}{3}{section*.16}% 
+\contentsline {subsection}{\numberline {A}Individual payoff}{3}{section*.17}% 
+\contentsline {subsection}{\numberline {B}Group payoff}{3}{section*.18}% 
+\contentsline {part}{II\hspace {1em}The theory of competitive traits}{3}{part.2}% 
+\contentsline {section}{\numberline {VI}Selfish vs altruistic behaviour}{3}{section*.19}% 
+\contentsline {part}{III\hspace {1em}Meta-strategy}{3}{part.3}% 
+\contentsline {section}{\numberline {VII}Meta-strategy}{3}{section*.20}% 
+\contentsline {section}{\numberline {VIII}Meta-utility}{4}{section*.21}% 
+\contentsline {section}{\numberline {IX}Meta-strategic game-theory}{4}{section*.22}% 
+\contentsline {part}{IV\hspace {1em}Quantum information -- A new era for strategic dominance}{4}{part.4}% 
+\contentsline {part}{V\hspace {1em}Humanity}{4}{part.5}% 
+\contentsline {subsection}{\numberline {A}The origins of humanism -- Religion \& universal human morals}{4}{section*.23}% 
+\contentsline {section}{\numberline {}References}{4}{section*.24}% 

@@ -1,0 +1,33 @@
+\contentsline {title}{Competitive information dynamics --- The theory of competitive traits \& meta-strategic game theory}{1}{section*.1}% 
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{section*.2}% 
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Notes}{1}{section*.3}% 
+\contentsline {part}{I\hspace {1em}Mathematical background}{2}{part.1}% 
+\contentsline {section}{\numberline {II}Traits}{2}{section*.4}% 
+\contentsline {subsection}{\numberline {A}Correlated traits}{2}{section*.5}% 
+\contentsline {subsubsection}{\numberline {1}Trait heirarchies}{2}{section*.6}% 
+\contentsline {subsection}{\numberline {B}Competing vs non-competing traits}{2}{section*.7}% 
+\contentsline {section}{\numberline {III}Individuals \& groups}{2}{section*.8}% 
+\contentsline {section}{\numberline {IV}Strategies}{2}{section*.9}% 
+\contentsline {subsection}{\numberline {A}Strategies as information}{2}{section*.10}% 
+\contentsline {section}{\numberline {V}Payoffs}{3}{section*.11}% 
+\contentsline {subsection}{\numberline {A}Individual payoff}{3}{section*.12}% 
+\contentsline {subsection}{\numberline {B}Group payoff}{3}{section*.13}% 
+\contentsline {part}{II\hspace {1em}The theory of competitive traits}{3}{part.2}% 
+\contentsline {section}{\numberline {VI}Indirect strategies}{3}{section*.14}% 
+\contentsline {section}{\numberline {VII}Associative traits}{3}{section*.15}% 
+\contentsline {section}{\numberline {VIII}Adoptive traits}{3}{section*.16}% 
+\contentsline {section}{\numberline {IX}Trait substitution}{3}{section*.17}% 
+\contentsline {section}{\numberline {X}Strategic subservience}{3}{section*.18}% 
+\contentsline {section}{\numberline {XI}Selfish vs altruistic behaviour}{3}{section*.19}% 
+\contentsline {part}{III\hspace {1em}Meta-strategy}{3}{part.3}% 
+\contentsline {section}{\numberline {XII}Meta-strategic game theory}{4}{section*.20}% 
+\contentsline {section}{\numberline {XIII}Meta-utility}{4}{section*.21}% 
+\contentsline {section}{\numberline {XIV}Meta-strategic game theory}{4}{section*.22}% 
+\contentsline {part}{IV\hspace {1em}Quantum information -- A new era for strategic dominance}{4}{part.4}% 
+\contentsline {part}{V\hspace {1em}Humanism}{4}{part.5}% 
+\contentsline {section}{\numberline {XV}The origins of universal human values}{4}{section*.23}% 
+\contentsline {section}{\numberline {XVI}Tribalism -- Ideology, religion \& the era of identity politics}{5}{section*.24}% 
+\contentsline {section}{\numberline {XVII}The contradictions \& viability of mankind in the face of human intelligence}{5}{section*.25}% 
+\contentsline {section}{\numberline {}References}{5}{section*.26}% 

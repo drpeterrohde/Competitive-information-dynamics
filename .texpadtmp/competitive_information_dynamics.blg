@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: /Users/124106/Library/Mobile Documents/com~apple~CloudDocs/Publications/GitHub/Competitive-information-dynamics/.texpadtmp/competitive_information_dynaics.aux
+The top-level auxiliary file: /Users/124106/Library/Mobile Documents/com~apple~CloudDocs/Publications/GitHub/Competitive-information-dynamics/.texpadtmp/competitive_information_dynamics.aux
 The style file: apsrmp4-2.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -10,7 +10,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Database file #1: competitive_information_dynaicsNotes.bib
+Database file #1: competitive_information_dynamicsNotes.bib
 Database file #2: ../bibliography.bib
 control{REVTEX42Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrmp41Control}, control.key{N/A}, control.author{03}, control.editor{0}, control.title{0}, control.pages{1}, control.year{0}, control.eprint{N/A}, 
@@ -26,7 +26,7 @@ Control: year (0) verbatim
 Control: production of eprint (0) enabled
 You've used 2 entries,
             5995 wiz_defined-function locations,
-            1623 strings with 15207 characters,
+            1623 strings with 15210 characters,
 and the built_in function-call counts, 984 in all, are:
 = -- 12
 > -- 16
