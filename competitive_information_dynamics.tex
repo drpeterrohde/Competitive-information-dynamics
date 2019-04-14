@@ -1,4 +1,4 @@
-\documentclass[twocolumn, aps, rmp, amsmath, amssymb, nofootinbib, superscriptaddress, longbibliography, floatfix, table-of-contents, eqsecnum]{revtex4-2}
+\documentclass[twocolumn, aps, rmp, amsmath, amssymb, nofootinbib, superscriptaddress, longbibliography, floatfix, table-of-contents, eqsecnum]{revtex4-1}
 
 \usepackage[pdftex]{graphicx}
 \usepackage[usenames, dvipsnames, svgnames, table]{xcolor}
@@ -64,6 +64,12 @@
 \tableofcontents
 
 \section{Notes}
+
+Traits become $s$, time becomes $t$.
+
+group leaders, worship
+
+humanity - can we change strategies?
 
 Strategies are associated with a trait, not with the group itself.
 
@@ -242,7 +248,7 @@ preprioritising strategies to promote another trait that has higher success.
 
 \section{Strategic subservience}
 
-\famousquote{Madam Speaker, I yield to the honourable gentleman.}{The Senator}
+\famousquote{Madam Speaker, I yield to the honourable gentleman.}{Senator Marmaduke, PhD}
 
 self-competition for strategically comaptible goals:
 for distinct strategies for different traits, where the traits are highly correlated or subset, better strategy is for the weaker trait to piggyback off the stronger common trait than to ouruse its own. strong supergroup strategy leads to weaker subgroup strategy to yield pririty to the supergroup strategy.
@@ -263,6 +269,10 @@ where
 \begin{align}
 	g \subset G.
 \end{align}
+
+Altruism with expectation for long-term reward. Not actually altruistic, rather self-serving with foresight.
+
+Altruism towards others without expectation for any reward whatsoever -- submissive to the greater good of the overarching group. True altruism in the sense of self-sacrifice.
 
 %
 % Meta-strategy
@@ -355,6 +365,64 @@ Want,
 \begin{align}
 \mathcal{P}_{G_\text{mankind}}(\mathcal{S}_{G_t}) \geq \mathcal{P}_{G_t}(\mathcal{S}_{G_t})\,\,\forall\, t
 \end{align}
+
+\section{Can mankind strategically evolve?}
+
+mankind's strategy appears to be a mixture between \textsc{Fairness} and \textsc{Dominance}, depending on the degree of asymmetry between players. cite psych studies supporting this.
+
+Variation of tit-for-tat is genetically hard-coded into us. Expressed widely across many competitive individual and group scenarios that we engage in.
+
+Tit-for-tat is meta-strategically stable. Little meta-strategic incentive to evolve.
+
+Distinction between technological improvement and strategic evolution.
+
+\begin{align}
+\mathcal{S}_\textsc{Tit-For-Tat} \approx \mathcal{S}_\textsc{Fairness}	
+\end{align}
+
+\textsc{Tit-For-Tat} evolves \textsc{Fairness}, in long-time limit results in \textsc{Fair-Dominance} via \textit{preferential attachment} occurring as a result of bargaining asymmetry. Leads to Pareto distribution,
+\begin{align}
+f_\text{Pareto}(x) = \left\{\begin{array}{ll}
+\frac{\alpha x_m^\alpha}{x^{\alpha+1}}, & x\geq x_m,\\
+0, & x<x_m.
+\end{array}\right.
+\end{align}
+$x_m\geq 0$ is minimum value for $x$ (\textit{scale} parameter), $\alpha>1$ is the \textit{shape} or \textit{Pareto index}, which characterises the degree of asymmetry in the distribution.
+
+\begin{align}
+	\mathcal{S}_\textsc{Fair-Dominance} \subset \mathcal{S}_\textsc{Fairness}
+\end{align}
+therefore meta-strategically stable.
+
+\begin{align}
+	\lim_{t\to\infty} \mathcal{S}_\textsc{Fairness} \to \mathcal{S}_\textsc{Fair-Dominance}
+\end{align}
+
+But
+\begin{align}
+	\mathcal{S}_\textsc{Fair-Dominance} \approx \mathcal{S}_\textsc{Dominance}
+\end{align}
+
+Exponential growth,
+\begin{align}
+W(t) = \beta e^{\gamma t}	
+\end{align}
+
+Mean wealth is,
+\begin{align}
+	{\overline W}(t) &= E[f_\text{Pareto}(x)] \cdot W(t) \nonumber\\
+	&= \frac{\alpha \beta x_m e^{\gamma t}}{\alpha - 1}
+\end{align}
+
+We require ${\overline W}(t+1)\geq {\overline W}(t)$. In the long-time limit when $\gamma\to 0$, this implies the Pareto index become stable $\alpha_{t+1} = \alpha_t$, otherwise mean payoff becomes negative and the strategy becomes unstable for the group.
+
+So long as this condition is maintained, we have non-negative mean payoff at each time step.
+
+So long as both individual and group payoffs remains positive, the strategy disincentivises opposition, and remains strategically stable. Under exponential growth conditions, this can be maintained, will tend to be the case for the sake of the strategy remaining viable. When growth conditions plateau (which inevitably they must under finite resource constraints, i.e $\gamma\to 0$), if the Pareto index continues to increase $\alpha(t+1)>\alpha(t)$, which is a result of existing asymmetry, not continued growth, this necessarily implies reduced mean payoff,
+\begin{align}
+	E[f_\text{Pareto}(x)] = \frac{\alpha x_m}{\alpha - 1},
+\end{align}
+implying an increasing subset of individuals whose individual payoff turns negative, $\mathcal{P}_\text{g}(t+1)<\mathcal{P}_\text{g}(t)$, at which point the strategy becomes increasingly unviable for the group since the outcome violates the perception of fairness. However, although strategically unstable at the individual level, it remains meta-strategically stable. No meta-strategic incentive for rectification.
 
 \bibliography{bibliography}
 

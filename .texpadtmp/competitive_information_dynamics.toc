@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {B}Competing vs non-competing traits}{2}{section*.7}% 
 \contentsline {section}{\numberline {III}Individuals \& groups}{2}{section*.8}% 
 \contentsline {section}{\numberline {IV}Strategies}{2}{section*.9}% 
-\contentsline {subsection}{\numberline {A}Strategies as information}{2}{section*.10}% 
+\contentsline {subsection}{\numberline {A}Strategies as information}{3}{section*.10}% 
 \contentsline {section}{\numberline {V}Payoffs}{3}{section*.11}% 
 \contentsline {subsection}{\numberline {A}Individual payoff}{3}{section*.12}% 
 \contentsline {subsection}{\numberline {B}Group payoff}{3}{section*.13}% 
@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {IX}Trait substitution}{3}{section*.17}% 
 \contentsline {section}{\numberline {X}Strategic subservience}{3}{section*.18}% 
 \contentsline {section}{\numberline {XI}Selfish vs altruistic behaviour}{3}{section*.19}% 
-\contentsline {part}{III\hspace {1em}Meta-strategy}{3}{part.3}% 
+\contentsline {part}{III\hspace {1em}Meta-strategy}{4}{part.3}% 
 \contentsline {section}{\numberline {XII}Meta-strategic game theory}{4}{section*.20}% 
 \contentsline {section}{\numberline {XIII}Meta-utility}{4}{section*.21}% 
 \contentsline {section}{\numberline {XIV}Meta-strategic game theory}{4}{section*.22}% 
@@ -30,4 +30,5 @@
 \contentsline {section}{\numberline {XV}The origins of universal human values}{4}{section*.23}% 
 \contentsline {section}{\numberline {XVI}Tribalism -- Ideology, religion \& the era of identity politics}{5}{section*.24}% 
 \contentsline {section}{\numberline {XVII}The contradictions \& viability of mankind in the face of human intelligence}{5}{section*.25}% 
-\contentsline {section}{\numberline {}References}{5}{section*.26}% 
+\contentsline {section}{\numberline {XVIII}Can mankind strategically evolve?}{5}{section*.26}% 
+\contentsline {section}{\numberline {}References}{6}{section*.27}% 
