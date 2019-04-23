@@ -112,15 +112,14 @@ Player               &          & \multicolumn{3}{c|}{$X$}       &      \\ \hlin
 
 \section{Traits}
 
-A \textit{trait} is an entirely arbitrary characteristic that may be associated with an individual. It may be genotypic, phenotypic, memetic, cultural, hereditary or non-hereditary, acquired or innate, physical or psychological -- it may be defined arbitrarily and abstractly as any feature by which individuals within a group can be identified as having in common.
+A \textit{trait} is an entirely arbitrary characteristic that may be associated with an individual. It may be genotypic, phenotypic, memetic, cultural, hereditary or non-hereditary, acquired or innate, immutable or mutable, physical, psychological, or entirely abstract in nature -- it may be defined arbitrarily and abstractly as any feature by which individuals can be identified or associated with as having in common.
 
-We use $s$ to denote a single trait, or $\vec s=\{s_1,\dots,s_n\}$ to denote a set of traits.
+We use $s$ to denote a single generic trait, or $\vec s=\{s_1,\dots,s_n\}$ to denote a set of traits.
 
 \subsection{Correlated traits}
 
-(replace with covariance)
 \begin{align}
-0\leq P(s_1\in G | s_2\in G)\leq 1	
+\text{cov}(s_1\in G | s_2\in G)	
 \end{align}
 
 \subsubsection{Trait heirarchies}
@@ -133,46 +132,46 @@ if
 P(s_1\in g | s_2\in g)\approx 1.	
 \end{align}
 
-\subsection{Competing vs non-competing traits}
+\section{Welcome to the arena}
 
-Selective pressures. Take two perfectly correlated traits. One may act competitively, the other not. The later inherits all benefits of the former, without actively pursuing a coordinated strategy of its own.
+We use $U$ to denote the \textit{universe} -- the set of all individuals participating in the competitive arena under consideration. Mathematically, it is a self-contained space, and does not interact with any externalities. However, new individuals may enter the universe upon creation, or exit upon destruction. Thus, the universe is a dynamic system, and although it exists continuously, it may evolve across orthogonal states over time.
 
-\section{Individuals \& groups}
-
-We use $U$ to denote the \textit{universe} -- the set of all individuals participating in the model under consideration. An \textit{individual} is a single participant within the universe, characterised entirely by the complete set of traits it exhibits,
+An \textit{individual} is a single participant within the universe, characterised entirely by its complete trait set,
 \begin{align}
 	g &= \{s_1,\dots,s_n\},\nonumber\\
 	g &\in U.
 \end{align}
 
-A \textit{group} is a set of individuals,
+A \textit{group} is simply a set of individuals,
 \begin{align}
 	G = \{g_1,\dots,g_n\}.	
 \end{align}
+The importance of defining groups as distinct mathematical objects in their own right, is that they may exhibit collective behaviour, distinct from the individual behaviour of their constituents.
 
-In the case of \textit{acquired traits}, an individual's trait set is dynamic, undergoing the update rule,
-\begin{align}
-	g\to g\cup t,	
-\end{align}
-where $g$ acquires trait $t$.
-
-A \textit{trait group} is the set of all individuals exhibiting a trait or set of traits,
+A \textit{trait group} is the set of all individuals exhibiting a trait or set of traits in common,
 \begin{align}
 	G_t = \bigcup_{i\in U} g_i \,|\, t\in g_i.
 \end{align}
-The complimentary \textit{non-trait group} is denoted $\bar G_t$. Together they satisfy the relations,
+The complimentary \textit{non-trait group} is denoted $\bar G_t$. Together they satisfy the set relations,
 \begin{align}
 G_t \cup \bar G_t &= U \,\,\text{(completeness)},\nonumber\\
 G_t \cap \bar G_t &= \emptyset \,\,\text{(exclusive)},
 \end{align}
-since traits are binary.
+since traits are defined as binary.
 
 \section{Strategies}
 
-A \textit{strategy} is defined in a game-theoretic context as the algorithm employed by one player when interacting with another. A player may be an individual or a group of individuals. Thus, strategies may be defined at an individual level (\textit{individual strategies}), or collectively at a group level (\textit{group strategies}),
+A \textit{strategy} is defined in a game-theoretic context as the algorithm employed by one player when interacting with another to advance its agenda. A player may be an individual or a group. Thus, strategies may be defined at an individual level (\textit{individual strategies}), or collectively at a group level (\textit{group strategies}).
+
+We denote the strategy employed by $p$ against $q$ as,
 \begin{align}
 	\mathcal{S}(p|q).	
 \end{align}
+$\mathcal{S}'$ denotes the opposing strategy in the reverse direction,
+\begin{align}
+	\mathcal{S}(p|q) = \mathcal{S}'(q|p).
+\end{align}
+Two opposing strategies may be chosen entirely independently -- the players could be engaging symmetrically using the same strategy, or asymmetrically using different ones.
 
 %The joint strategy employed by $n$ players $p_i$ against $m$ players $q_j$ is denoted,
 %\begin{align}
@@ -180,44 +179,38 @@ A \textit{strategy} is defined in a game-theoretic context as the algorithm empl
 %\end{align}
 %The special case of $n=1$ refers to a single player engaging in a strategy independently of other players (i.e not a joint strategy).
 
-We adopt the notation $\mathcal{S}'$ for the opposing strategy,
-\begin{align}
-	\mathcal{S}(p|q) = \mathcal{S}'(q|p).
-\end{align}
-Two opposing strategies may be chosen entirely independently -- they could be entirely different, or identical.
-
-Individuals within a group may not behave homogenously. Thus, the strategy employed by individuals within a group may in general be distinct from their collective group strategy, which described by the cumulative action of all participating individuals. Thus, in general,
+Individuals within a group may not behave homogenously or independently. The strategy employed by individuals from a group when acting in isolation may in general be distinct from their collective group strategy. A group strategy may arise as an emergent phenomenon, entirely distinct in nature from the behaviour of the individuals within it. It could also arise as a collective feature of competition between subgroups within the group, resulting in collective dynamics. Thus, in general,
 \begin{align}
 	\mathcal{S}(g\in G|q)\neq \mathcal{S}(G|q).
 \end{align}
 
 \subsection{Strategies as information}
 
-A strategy is not inherently physical, but, much like computer software, is purely informational in nature.
+A strategy is not inherently physical or attached to a particular medium. Rather, it is to be considered abstractly in an algorithmic sense, purely informational in nature, that could be encoded into any medium or executed upon any sufficient computational platform. The players employing a strategy can be regarded as \textit{hosts} for the strategy, which encode, execute, and propagate it to advance their interests.
 
-$I(\mathcal{S})$
+%$I(\mathcal{S})$
 
 \section{Payoffs}
 
 The \textit{payoff} of a strategy for player $p$, $\mathcal{P}_p(\mathcal{S})$, is the expectation of `reward' (in arbitrary units of utility) obtained by executing a strategy. The payoff may be positive (for `successful' strategies advancing the player's interests), or negative (for `unsuccessful' ones).
 
-For a trait $t$ to develop a collective strategies to guarantee its propagation, their objective is to maximise the joint payoff of the respective trait group, $G_t$.
+For a trait $s$ to develop a collective strategy for advancing its propagation, the objective of a successful strategy is to maximise the collective payoff for the respective trait group, $G_s$.
 
 A special case arises when players compete for finite resources, in which case the sum of their respective payoffs is bounded by the resources' abundancy $c$,
 \begin{align}
 	\mathcal{P}_p(\mathcal{S}_p) + \mathcal{P}_q(\mathcal{S}_q) \leq c.
 \end{align}
 
-Another specialised case is \textit{zero-sum games} ($c=0$) in which players' payoffs are exactly opposite, i.e gains made by one come at the direct expense of the other,
+\textit{Zero-sum games} arise when $c=0$, in which case players' payoffs are exactly opposite, i.e gains made by one come at the direct expense of the other,
 \begin{align}
 \mathcal{P}_p(\mathcal{S}_p) = -\mathcal{P}_q(\mathcal{S}_q).
 \end{align}
 
-Alternately, opposing strategies may collectively act in one another's mutual benefit -- a symbiotic strategy,
+Alternately, opposing strategies may collectively act towards their mutual benefit -- a symbiotic strategy,
 \begin{align}
 \mathcal{P}_p(\mathcal{S}_{p\cup q}) > \mathcal{P}_p(\mathcal{S}_p\cup \mathcal{S}_q).
 \end{align}
-Here the two distinct players effectively engage in a cooperative inter-group strategy.
+Here players effectively engage in a cooperative inter-group strategy, collectively enhancing one another.
 
 \subsection{Individual payoff}
 
@@ -228,7 +221,7 @@ The payoff for a group is simply given by the sum of the payoffs benefitting the
 	\mathcal{P}_{G}(\mathcal{S}(G)) = \sum_{g\in U} \mathcal{P}_G(g)
 \end{align}
 
-In the case of a non-competing trait that achieves payoff indirectly via its correlation with competing traits, we can observe properties of the form,
+A non-competing trait may benefit indirectly via its correlation with competing traits, where we observe properties of the form,
 \begin{align}
 	\mathcal{P}_{G_1}(\emptyset) \propto \mathcal{P}_{G_2}(\mathcal{S})
 \end{align}
@@ -239,6 +232,14 @@ That is, the group $G_1$ benefits passively (implementing no strategy of its own
 %
 
 \part{The theory of competitive traits}
+
+\section{Intrinsic vs acquired traits}
+
+In the case of \textit{acquired traits}, an individual's trait set is dynamic, undergoing the update rule,
+\begin{align}
+	g\to g\cup t,	
+\end{align}
+where $g$ acquires trait $t$.
 
 \section{Indirect strategies}
 
@@ -284,7 +285,9 @@ Altruism with expectation for long-term reward. Not actually altruistic, rather 
 
 Altruism towards others without expectation for any reward whatsoever -- submissive to the greater good of the overarching group. True altruism in the sense of self-sacrifice.
 
-\section{Non-competitive traits}
+\section{Competitive vs non-competitive traits}
+
+Selective pressures. Take two perfectly correlated traits. One may act competitively, the other not. The later inherits all benefits of the former, without actively pursuing a coordinated strategy of its own.
 
 The purpose of a trait group engaging in a group strategy is to advance the survival of the trait defining the group. However, it is to be expected that some trait groups will not naturally gravitate towards deploying survival strategies. Specifically, if the occurrence of a trait amongst individuals is inherently strategy-independent, there is no incentive to deploy one. For example, a physical trait that is not heritable, but rather emerges entirely randomly amongst individuals, naturally fits this description.
 
