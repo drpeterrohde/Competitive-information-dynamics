@@ -118,21 +118,24 @@ We use $s$ to denote a single generic trait, or $\vec s=\{s_1,\dots,s_n\}$ to de
 
 \subsection{Correlated traits}
 
+In general, different traits do not express themselves as independent random variables. They often exhibit all manner of correlations, even between traits defined across different mediums. For example, a direct correlation between an inherited physical trait (such as skin colour, largely genetically encoded), and a non-inherited, associative one (such as political party affiliation, which is entirely psychologically motivated, and subsequently reinforced via the strategic benefit arising from the associated trait group strategy).
+
+Traits emerge via many distinct mechanisms, often with evolutionary origins. The evolutionary nature of the emergence and propagation of many traits implies that some will share common historical origins. A shared evolutionary history between very distinctly expressed traits may leave residual correlations in their expression at much later stages -- a sort of `evolutionary hidden variable theory', to utterly abuse the vernacular of modern physicists, if you will.
+
+In general, we expect all manner of correlations between distinct traits. Within a given group (or the universe as a whole), we can quantify this via the covariance in their expression within the group,
 \begin{align}
-\text{cov}(s_1\in G | s_2\in G)	
+C_G(s_1,s_2) = \text{cov}(s_1\in G | s_2\in G).
 \end{align}
 
-\subsubsection{Trait heirarchies}
+\subsection{Trait heirarchies}
 
+A special case in which trait correlation arises, is when traits manifest themselves in a hierarchical manner, whereby a set of trait groups form sub-groups of one another,
 \begin{align}
-s_1 \subset s_2	
+G_{s_1} \subset G_{s_2} \subset \dots \subset G_{s_n}.
 \end{align}
-if
-\begin{align}
-P(s_1\in g | s_2\in g)\approx 1.	
-\end{align}
+In such a sequence, exhibiting trait $i$ necessarily implies also exhibiting trait $j$, for \mbox{$i<j$}. Such sequences could also bifurcate into tree-like group inclusion hierarchies.
 
-\section{Welcome to the arena}
+\section{Welcome to the battle arena}
 
 We use $U$ to denote the \textit{universe} -- the set of all individuals participating in the competitive arena under consideration. Mathematically, it is a self-contained space, and does not interact with any externalities. However, new individuals may enter the universe upon creation, or exit upon destruction. Thus, the universe is a dynamic system, and although it exists continuously, it may evolve across orthogonal states over time.
 
