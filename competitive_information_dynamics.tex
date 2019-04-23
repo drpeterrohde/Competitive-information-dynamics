@@ -65,13 +65,7 @@
 
 \section{Notes}
 
-Traits become $s$, time becomes $t$.
-
 group leaders, worship
-
-humanity - can we change strategies?
-
-Strategies are associated with a trait, not with the group itself.
 
 Trait abstractly carries algorithmic information content, not attached to a particular physical medium.
 
@@ -85,20 +79,30 @@ Traits are ratio of expression, not just binary
 
 An individual's tendency to obey a strategy: $T_{g,S}$
 
-Inter-trait enhancement. $t_1$ ehnahnces expression of $t_2$ - cooperation
+Inter-trait enhancement. $s_1$ ehnahnces expression of $s_2$ - cooperation
 
-If traits are perfectly correlated, their respective trait groups are necessarily identical, $G_{t_1}=G_{t_2}$. Nonetheless, the strategies associated with the traits may be distinct, $\mathcal{S}(t_1)\neq\mathcal{S}(t_2)$.
+If traits are perfectly correlated, their respective trait groups are necessarily identical, $G_{s_1}=G_{s_2}$. Nonetheless, the strategies associated with the traits may be distinct, $\mathcal{S}(s_1)\neq\mathcal{S}(s_2)$.
 
 self-competition for strategically comaptible goals:
 for distinct strategies for different traits, where the traits are highly correlated or subset, better strategy is for the weaker trait to piggyback off the stronger common trait than to ouruse its own. strong supergroup strategy leads to weaker subgroup strategy to yield pririty to the supergroup strategy.
 
 trait absirbtion by strategies advancing correlated traits. 
 
-neutral strategies for non-competing traits. eg if a trait is random, with no capacity to influence its own future propagation, we expect a neutral strategy to be observed. i.e the trait is non-competitive.
-
 section: medium for information. incl. collective.
 
 tit for tat is meta-strategically stable, even though no stability for groups employing it.
+
+\begin{table}[!htbp]
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Player               &          & \multicolumn{3}{c|}{$X$}       &      \\ \hline
+                     & Strategy & $S_1$    & $S_2$    & $S_3$    & Meta \\ \hline
+\multirow{3}{*}{$Y$} & $S_1$    & $(0,0)$  & $(1,-1)$ & $(2,-2)$ &      \\ \cline{2-6} 
+                     & $S_2$    & $(-1,1)$ & $(0,0)$  & $(1,-1)$ &      \\ \cline{2-6} 
+                     & $S_3$    & $(-2,2)$ & $(-1,1)$ & $(0,0)$  &      \\ \hline
+                     & Meta     &          &          &          &      \\ \hline
+\end{tabular}
+\end{table}
 
 %
 % Mathematical background
@@ -108,25 +112,25 @@ tit for tat is meta-strategically stable, even though no stability for groups em
 
 \section{Traits}
 
-A \textit{trait} is an entirely arbitrary characteristic that may be associated with an individual. It may be genotypic, phenotypic, memetic, cultural, hereditary or non-hereditary, acquired or inate, physical or psychological -- it may be defined arbitrarily and abstractly as any feature by which individuals within a group can be identified as having in common.
+A \textit{trait} is an entirely arbitrary characteristic that may be associated with an individual. It may be genotypic, phenotypic, memetic, cultural, hereditary or non-hereditary, acquired or innate, physical or psychological -- it may be defined arbitrarily and abstractly as any feature by which individuals within a group can be identified as having in common.
 
-We use $t$ to denote a single trait, or $\vec t=\{t_1,\dots,t_n\}$ to denote a set of traits.
+We use $s$ to denote a single trait, or $\vec s=\{s_1,\dots,s_n\}$ to denote a set of traits.
 
 \subsection{Correlated traits}
 
 (replace with covariance)
 \begin{align}
-0\leq P(t_1\in G | t_2\in G)\leq 1	
+0\leq P(s_1\in G | s_2\in G)\leq 1	
 \end{align}
 
 \subsubsection{Trait heirarchies}
 
 \begin{align}
-t_1 \subset t_2	
+s_1 \subset s_2	
 \end{align}
 if
 \begin{align}
-P(t_1\in g | t_2\in g)\approx 1.	
+P(s_1\in g | s_2\in g)\approx 1.	
 \end{align}
 
 \subsection{Competing vs non-competing traits}
@@ -137,7 +141,7 @@ Selective pressures. Take two perfectly correlated traits. One may act competiti
 
 We use $U$ to denote the \textit{universe} -- the set of all individuals participating in the model under consideration. An \textit{individual} is a single participant within the universe, characterised entirely by the complete set of traits it exhibits,
 \begin{align}
-	g &= \{t_1,\dots,t_n\},\nonumber\\
+	g &= \{s_1,\dots,s_n\},\nonumber\\
 	g &\in U.
 \end{align}
 
@@ -188,6 +192,8 @@ Individuals within a group may not behave homogenously. Thus, the strategy emplo
 \end{align}
 
 \subsection{Strategies as information}
+
+A strategy is not inherently physical, but, much like computer software, is purely informational in nature.
 
 $I(\mathcal{S})$
 
@@ -240,11 +246,15 @@ A trait might directly pursue its own competitive strategy, or indirectly inheri
 
 \section{Associative traits}
 
+trait is a group phenomenon, not an intrinsically individual one. the individual acquires the trait upon association with the group. e.g `group identity'. This is in contrast to hereditary traits, which in general are intrinsic upon creation and immutable in nature.
+
 \section{Adoptive traits}
 
 preprioritising strategies to promote another trait that has higher success.
 
 \section{Trait substitution}
+
+group has multiple traits in common. if the strategy swaps between them it makes no difference mathematically. e.g if Gs1 approx Gs2, then if the strategy advancing Gs1 switches over to advancing Gs2, is algorithmically equivalent and can be regarded as interchangeable.
 
 \section{Strategic subservience}
 
@@ -254,7 +264,7 @@ self-competition for strategically comaptible goals:
 for distinct strategies for different traits, where the traits are highly correlated or subset, better strategy is for the weaker trait to piggyback off the stronger common trait than to ouruse its own. strong supergroup strategy leads to weaker subgroup strategy to yield pririty to the supergroup strategy.
 
 \begin{align}
-\mathcal{P}_{t_1}(\mathcal{S}_{t_2}) > \mathcal{P}_{t_1}(\mathcal{S}_{t_1}), \,\,t_1\subset t_2.
+\mathcal{P}_{s_1}(\mathcal{S}_{s_2}) > \mathcal{P}_{s_1}(\mathcal{S}_{s_1}), \,\,s_1\subset s_2.
 \end{align}
 
 \section{Selfish vs altruistic behaviour}
@@ -274,6 +284,16 @@ Altruism with expectation for long-term reward. Not actually altruistic, rather 
 
 Altruism towards others without expectation for any reward whatsoever -- submissive to the greater good of the overarching group. True altruism in the sense of self-sacrifice.
 
+\section{Non-competitive traits}
+
+The purpose of a trait group engaging in a group strategy is to advance the survival of the trait defining the group. However, it is to be expected that some trait groups will not naturally gravitate towards deploying survival strategies. Specifically, if the occurrence of a trait amongst individuals is inherently strategy-independent, there is no incentive to deploy one. For example, a physical trait that is not heritable, but rather emerges entirely randomly amongst individuals, naturally fits this description.
+
+In such cases we say that the trait group is strategy neutral, denoted,
+\begin{align}
+	\mathcal{S}=\emptyset,
+\end{align}
+in which case the trait group does not actively pursue any form of collective strategy against competitors.
+
 %
 % Meta-strategy
 %
@@ -282,7 +302,15 @@ Altruism towards others without expectation for any reward whatsoever -- submiss
 
 \section{Meta-strategic game theory}
 
-Strategic traits: the trait of employing a strategy, $t=\mathcal{S}$. Payoff for strategic trait group is net survival of strategy itself, not a particular group employing the strategy. Strategy is aiming to advance itself, using groups employing it as hosts for itself. May not care about a specific group, and willing to sacrifice them so long as the strategy is preserved long-term. In the case of zero-sum games, might act indifferently.
+Within the mathematical framework we have introduced, traits may be defined \textit{completely arbitrary} as characteristics exhibited by individuals, with which they can subsequently be associated with the respective trait groups. Since a trait is very much entitled to defined as a behavioural one (or even as an acquired behavioural one), we can legitimately define traits according to the strategies employed by the entity. We refer to groups defined according to their employed strategies as \textit{strategy groups}, where the strategy itself is the trait.
+
+Considering the game-theoretic dynamics between strategy groups can now be considered entirely equivalent to competition between strategies themselves, in the abstract sense where a strategy is purely an information unit competing to advance itself. Now the strategy itself is competing for survival, rather than merely being a tool employed for the advancement of a group. Since many distinct groups may be competing in accordance with the same strategy, its survival needn't be stipulated by a single group employing it, but rather collectively by all groups employing it -- the strategy group. Groups employing a strategy may simply be regarded as \textit{hosts} for the advancement of the strategy. The means of implementation and transmission of a strategy needn't be held in common within the strategy group. All that determines the survival of the strategy group is the abstract algorithmic representation of the strategy, not the medium for storing and executing it, much as a software library can be deployed across multiple platforms and contribute to any number of distinct applications, or identical legal systems implemented in any number of countries.
+
+Alternately, individuals and groups constitute nothing more than a medium in which strategies reside and compete. Neither individuals, groups, nor traits compete. Rather, competition takes place entirely in an abstract information-theoretic sense, where non-physical units of information compete for survival, exploiting whatever physical hosts in which they are able to encode and execute themselves.
+
+Strategic traits: the trait of employing a strategy, $s=\mathcal{S}$. Payoff for strategic trait group is net survival of strategy itself, not a particular group employing the strategy. Strategy is aiming to advance itself, using groups employing it as hosts for itself. May not care about a specific group, and willing to sacrifice them so long as the strategy is preserved long-term. In the case of zero-sum games, might act indifferently.
+
+\subsection{Strategy groups}
 
 Notion of meta-strategy: actual goal of a strategy is to advance the strategy group, not an individual group employing the strategy. When the strategy spreads across multiple groups which evolve independently, it undergoes evolution at the meta-level. Now the strategy is purely informational, and is no longer limited to a particular host residing in a particular medium. It can switch across mediums and evolve as such. If groups employing old mediums die out, the strategy survives via implementation in the new medium.
 
@@ -320,6 +348,8 @@ show game payoff matrix. show meta-strategy payoff matrix.
 Find examples of contradictions between the two.
 
 A strategy can exhibit meta-strategic stability in the absence of any stability amongst those employing it.
+
+When a group abandons an old strategy and implements a new one it undergoes trait substitution at the strategic level. The strategy itself has lost, even though its former host survives. A new winning strategy advances the cause of the group adopting it, expanding its own influence in the process.
 
 %
 % Quantum information - A new era for strategic dominance
